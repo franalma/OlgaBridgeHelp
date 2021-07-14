@@ -1,0 +1,63 @@
+
+body{
+    height: 100%;
+  margin: 0;
+    /* /background-image: linear-gradient(rgba(0, 0, 0, 0.45), rgba(0, 0, 0, 0.45)), url('https://media.giphy.com/media/YTF97COEsZxmJ1c7kw/giphy.gif'); */
+}
+
+.container{
+    display: table;
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+}
+
+.middle{
+    display: table-cell;
+    vertical-align: middle;
+}
+
+.main{
+    margin: auto;
+    width: 50%;
+    
+    padding: 10px;
+    vertical-align: middle;
+
+}
+
+.login{
+    border: 3px solid green;
+    width: 100%;
+    height: auto;
+    align-content: center;
+}
+.login input[type=text], input[type=number], input[type=submit]{
+    width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+  text-align: center;
+  
+
+}
+
+.login img{
+    width: 90%;    
+}
+.login label{
+    font-size: 20pt;
+}
+.footer{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+
+    background-color:rgba(126, 179, 3, 0.767);
+  
+}
