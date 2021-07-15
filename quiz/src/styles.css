@@ -148,3 +148,15 @@ button{
     background-image: url('https://media.giphy.com/media/3o7buijTqhjxjbEqjK/giphy.gif');
     background-size: cover;
 }
+
+@media screen and (min-width: 480px) {
+    body {
+      background-color: lightgreen;
+    }
+  }
+
+  @media screen and (max-width: 992px) {
+    body {
+      background-color: blue;
+    }
+  }

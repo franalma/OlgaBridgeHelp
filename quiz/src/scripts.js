@@ -97,7 +97,7 @@ function loadGameSession(){
     const queryString = window.location.search;
     const urlParams = new URLSearchParams(queryString);
     
-    for (var i = 0; i<currentLifes;i++){
+    for (var i = 0; i<currentLives;i++){
         sessionInfo.innerHTML += "<img src='"+imgs.heart+"'/>"
     } 
 
