@@ -44,7 +44,8 @@ const imgs = {
     red_cross:"imagenes/red_cross.png",
     // game_over:"imagenes/game_over.jpg",
     game_over:"https://media.giphy.com/media/eJ4j2VnYOZU8qJU3Py/giphy.gif",
-    green_tick:"imagenes/green_tick.png"
+    green_tick:"imagenes/green_tick.png",
+    user_win:"https://media.giphy.com/media/Y3qaJQjDcbJPyK7kGk/giphy.gif"
 
 }
 
@@ -125,7 +126,13 @@ function onCorrectAnswer(){
     setTimeout(()=>{
         feedback.innerHTML = ""; 
         currentQuestion++;
-        loadQuestion(currentQuestion);    
+        if (currentQuestion >= questions.length){
+            userWin(); 
+        }else{
+            loadQuestion(currentQuestion);    
+        }
+
+        
     },1000); 
     
     
@@ -135,8 +142,22 @@ function loadFirstQuestion(){
     loadQuestion(currentQuestion);
 }
 
+function userWin(){
+    document.getElementsByTagName("body")[0].classList.toggle('user_win');
+    var sessionInfo = document.getElementById("id_game_session");
+    sessionInfo.innerHTML =""; 
+    var body = document.getElementsByClassName("main_question")[0];
+    body.innerHTML = ""
+    body.innerHTML = "<img src='"+imgs.user_win+"'/>";
+    setTimeout(()=>{        
+        document.location = "index.html";        
+    },3500); 
+}
+
 function gameOver(){
     document.getElementsByTagName("body")[0].classList.toggle('body_game_over');
+    var sessionInfo = document.getElementById("id_game_session");
+    sessionInfo.innerHTML =""; 
     var body = document.getElementsByClassName("main_question")[0];
     body.innerHTML = ""
     body.innerHTML = "<img src='"+imgs.game_over+"'/>";
