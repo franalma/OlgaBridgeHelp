@@ -11,27 +11,23 @@
     <title>Quiz</title>
 </head>
 
-<body onload="onLoad()">
+<body onload="onLoad()" class="questions">
+    <div class="life" id="id_game_session"></div>
     <div class="container">
-        <div class="life" id="id_game_session">
-                    
+        
+        <div class="middle">
+            <div class="main_question">
+                <div class="question_content" id="id_question"></div>
+                <div class="answers" id="id_answers"></div>
+                <button onclick="nextQuestion()">Siguiente</button>
+                <div class="question_feedback" id="id_question_feed"></div>
+            </div>
         </div>
+        
 
-        <section class="question">
-            <div class="question_content" id="id_question">
-                
-            </div>
-            <button onclick="nextQuestion()">Siguiente</button>
-
-            <div class="question_feedback" id="id_question_feed">
-                
-            </div>
-        </section>
-
+        
     
     </div>
-
-
 </body>
 
 </html>

@@ -1,8 +1,17 @@
 
-body{
+.body{
     height: 100%;
   margin: 0;
-    /* /background-image: linear-gradient(rgba(0, 0, 0, 0.45), rgba(0, 0, 0, 0.45)), url('https://media.giphy.com/media/YTF97COEsZxmJ1c7kw/giphy.gif'); */
+  /* background-image: url('https://media.giphy.com/media/KZRkHRdUCJE79gTX2M/giphy.gif'); */
+  background-image: url('  https://media.giphy.com/media/XBdqLDAXEFN1uLzuVJ/giphy.gif');
+
+  background-size: cover;
+   
+}
+
+.questions{
+    background-image: url('https://media.giphy.com/media/l2Sqf1fbj1qrmaJ6E/source.gif');
+    background-size: cover;
 }
 
 .container{
@@ -20,44 +29,122 @@ body{
 }
 
 .main{
-    margin: auto;
-    width: 50%;
-    
-    padding: 10px;
+    margin:auto;    
+    height:auto;
+    width: 40%;    
     vertical-align: middle;
-
+    align-items: center;
+    position: relative;
 }
-
+h1{
+    color: white;
+    font-size: 40pt;
+}
 .login{
-    border: 3px solid green;
-    width: 100%;
-    height: auto;
+    /* border: 3px solid green; */
+    width: 70%;
+    height: 60%;
     align-content: center;
 }
 .login input[type=text], input[type=number], input[type=submit]{
     width: 100%;
   padding: 12px 20px;
-  margin: 8px 0;
+  margin-top: 20pt;
   display: inline-block;
   border: 1px solid #ccc;
   box-sizing: border-box;
   text-align: center;
+  font-size: 20pt;
   
+}
 
+button{
+    width: 100%;
+    padding: 12px 20px;
+    margin-top: 20pt;
+    display: inline-block;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+    text-align: center;
+    font-size: 20pt;
 }
 
 .login img{
-    width: 90%;    
+    width: 100%;   
+    height: 60%; 
 }
 .login label{
+    box-sizing: border-box;
     font-size: 20pt;
+    color: white;
+    
 }
 .footer{
     position: absolute;
     bottom: 0;
     left: 0;
     width: 100%;
-
     background-color:rgba(126, 179, 3, 0.767);
-  
+}
+
+.life{
+    float: right;
+    width: 5%;
+    border: 3px solid #73AD21;
+    padding: 2px;
+}
+
+.questions ul, input{
+    font-size: 15pt;
+    margin: 10pt;
+    
+    
+}
+
+
+.question_content img{    
+    width: 40;
+    height: auto;
+    border-radius: 15px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;    
+}
+
+.question_feedback img{
+    margin-top: 10px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto
+}
+
+.main_question{
+    margin-left: auto;
+    margin-right: auto;    
+    width: 60%;    
+    height: auto;
+    position: relative;
+}
+
+.question_content label {
+    display: inline-block;
+    vertical-align: top;
+    margin-right: 3%;
+}
+.question_content input {
+    display: inline-block;
+    vertical-align: top;
+}
+
+.answers{    
+    margin-top: 10pt;
+    border: 1px solid black;
+}
+
+.body_game_over{
+    
+    height: 100%;
+    margin: 0;
+    background-image: url('https://media.giphy.com/media/3o7buijTqhjxjbEqjK/giphy.gif');
+    background-size: cover;
 }
