@@ -10,31 +10,31 @@ const questions = [
         title: "¿Quién pintó la última cena?",
         options:["Leonardo Da Vinci", "Diego Velázquez","El Greco", "Matisse" ],
         answer:"0",
-        img: "imagenes/cf.jpg"
+        img: "imagenes/last_dinner.jpg"
     },
     {
         title: "¿Cuál es el país más grande del mundo?",
         options:["España", "Rusia", "China","Ucrania"],
         answer: "1",
-        img: "imagenes/cf.jpg"
+        img: "imagenes/russia.jpg"
     },
     {
         title: "¿En qué año comenzó la Segunda Guerra Mundial?",
         options:["1945", "1987","1929", "1939" ],
         answer: "3",
-        img: "imagenes/cf.jpg"
+        img: "imagenes/second_war.jpg"
     },
     {
         title: "¿Cuántas patas tiene una araña?",
         options:["8", "2","6", "4" ],
         answer: "0",
-        img: "imagenes/cf.jpg"
+        img: "imagenes/spider.jpg"
     },
     {
         title: "¿Cuál es la ciudad de los rasca cielos?",
         options:["Barcelona", "Cuenca","Las Palmas", "Nueva York" ],
         answer: "3",
-        img: "imagenes/cf.jpg"
+        img: "imagenes/new_york.png"
     },
 
 ];
@@ -50,7 +50,7 @@ const imgs = {
 }
 
 
-const MAX_NUM_LIFES = 0;
+const MAX_NUM_LIFES = 2;
 var currentQuestion; 
 var currentLifes;
 
@@ -98,7 +98,7 @@ function loadGameSession(){
     const queryString = window.location.search;
     const urlParams = new URLSearchParams(queryString);
     
-    for (var i = 0; i<currentLives;i++){
+    for (var i = 0; i<currentLifes;i++){
         sessionInfo.innerHTML += "<img src='"+imgs.heart+"'/>"
     } 
 
